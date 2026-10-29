@@ -8,6 +8,9 @@ yarn-error.log*
 .env
 .env.local
 .env.*.local
+.env.*
+!.env.example
+
 
 # OS / Editor files
 .DS_Store
