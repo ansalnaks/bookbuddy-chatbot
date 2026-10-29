@@ -1,0 +1,137 @@
+/* ========================================================
+   BookBuddy AI - Global Theme & Bookish Styles
+   ======================================================== */
+
+:root {
+  /* Warm Parchment & Cozy Library Palette */
+  --bg-parchment: #f9f6f0;
+  --bg-card: #ffffff;
+  --bg-card-subtle: #f4eee3;
+  --bg-card-hover: #ede4d3;
+
+  /* Deep Library Dark for Sidebar */
+  --bg-sidebar: #191410;
+  --bg-sidebar-surface: #241d17;
+  --bg-sidebar-hover: #312820;
+  --border-sidebar: #382c21;
+
+  /* Literary Ink Typography */
+  --text-ink-dark: #201a15;
+  --text-ink-medium: #4e4238;
+  --text-ink-light: #7e6f62;
+  --text-sidebar: #eedfd0;
+  --text-sidebar-muted: #a39385;
+
+  /* Rich Accents */
+  --accent-gold: #c98a3e;
+  --accent-gold-hover: #b37731;
+  --accent-gold-soft: #faebd7;
+  --accent-gold-glow: rgba(201, 138, 62, 0.25);
+  
+  --accent-burgundy: #7b282c;
+  --accent-burgundy-soft: #fbf0f0;
+
+  --accent-forest: #2d5a37;
+  --accent-forest-soft: #edf5ef;
+
+  /* Structural Borders & Shadows */
+  --border-parchment: #e6dcce;
+  --border-parchment-strong: #d5c8b5;
+  --shadow-sm: 0 1px 3px rgba(32, 26, 21, 0.06);
+  --shadow-md: 0 4px 12px rgba(32, 26, 21, 0.08);
+  --shadow-lg: 0 10px 25px rgba(32, 26, 21, 0.12);
+  --shadow-book: 2px 4px 14px rgba(32, 26, 21, 0.14), -1px 0 3px rgba(32, 26, 21, 0.04);
+
+  /* Fonts */
+  --font-serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-literary: 'Lora', Georgia, serif;
+
+  /* Sizing & Transitions */
+  --sidebar-width: 310px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+  --transition: all 0.2s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Box sizing and clean reset */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: var(--font-body);
+  background-color: var(--bg-parchment);
+  color: var(--text-ink-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+/* Custom Scrollbars with bookish leather/wood feel */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d4c7b4;
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #baaa95;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb {
+  background: #3c3024;
+}
+
+.sidebar-scroll::-webkit-scrollbar-thumb:hover {
+  background: #504132;
+}
+
+/* Base Utility Classes */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+button:focus-visible {
+  outline: 2px solid var(--accent-gold);
+  outline-offset: 2px;
+}
+
+textarea, input {
+  font-family: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Subtle Book Paper Texture Effect */
+.paper-texture {
+  background-color: var(--bg-parchment);
+  background-image: radial-gradient(#d6cbba 0.75px, transparent 0.75px);
+  background-size: 24px 24px;
+}
+
